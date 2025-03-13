@@ -8,3 +8,4 @@ Resources:
 
 - [AI Adoption Framework](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/ai "Microsoft AI Adoption Framework")
 - [Azure AI Architectures](https://learn.microsoft.com/en-us/azure/architecture/ai-ml/ "Azure AI Architectures")
+- [AI Hub Gateway Landing Zone accelerator](https://github.com/Azure-Samples/ai-hub-gateway-solution-accelerator/tree/main "AI Hub Gateway Landing Zone accelerator")
