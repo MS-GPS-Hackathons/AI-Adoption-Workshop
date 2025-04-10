@@ -71,7 +71,7 @@
     * How will these environments securely connect to the foundational services (identity, networking, management)?
     * How will you ensure network segmentation between different applications or business units hosted in Azure?
 
-**Challenge 3: Centralized & Secure AI Service Hub (Updated based on Reference Architecture)**
+**Challenge 3: Centralized & Secure AI Service Hub**
 
 * **Context:** IFS requires a dedicated, secure environment (the "AI Hub") to host and manage shared Azure AI services (like Azure OpenAI, Azure AI Search) and potentially the logic that orchestrates them (e.g., prompt flows). This hub must act as the single, controlled gateway for accessing these services, enforcing strict security and governance. Private networking is mandatory for all components.
 * **Core Requirements derived from baseline:**

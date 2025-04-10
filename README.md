@@ -1,82 +1,161 @@
-# AI Hub and Azure Landing Zones - Whiteboard Design Session
+# Workshop: Designing an End-to-End Azure AI Solution
 
-![Azure AI Adoption](./media/ai-adoption-strategy.png)
+**Version:** 1.0  
+**Date:** 2025-04-10  
 
 ## Overview
 
-This whiteboard design session provides attendees with a practical scenario to design a secure, scalable Azure architecture supporting AI adoption for Contoso Health, a regional healthcare provider.
+This workshop guides participants through the end-to-end process of designing a secure, scalable, and governed AI solution on Microsoft Azure, aligning with the Microsoft Cloud Adoption Framework (CAF) and Azure Well-Architected Framework (WAF) principles.
 
-Participants will analyze the customer's business objectives, strategic vision, and current challenges. They will then define clear business requirements and address technical challenges by designing Azure architectures aligned with Azure best practices, the Microsoft Cloud Adoption Framework, and Azure Well-Architected Framework.
+Starting with a realistic customer scenario (Innovate Financial Services - IFS), participants will first design the foundational Azure platform using Azure Landing Zones concepts, including a specialized AI Hub for governed access to AI services. Subsequently, they will design a specific AI workload – an internal RAG (Retrieval-Augmented Generation) chatbot – that leverages this platform foundation.
 
-## Workshop Delivery Flowchart
+**Goal:** To equip participants with the knowledge and design patterns necessary to architect robust enterprise AI solutions on Azure, from the underlying platform infrastructure to the specific AI application components.
 
-The following flowchart illustrates the structured approach for delivering this whiteboard design session:
-
-![Workshop Delivery Flowchart](./media/cloud-adoption-strategy.png)
-
-## Session Structure
-
-The session is divided into three main steps:
-
-1. **Analyze Customer Needs** (15 minutes)
-   - Review the provided [Customer Story](./wds/contoso-health-customer-story.md).
-   - Identify key business objectives, AI use cases, and success metrics.
-
-2. **Define Business Requirements** (30 minutes):
-   - Security and compliance
-   - Governance and management
-   - Connectivity and integration
-   - AI service management
-   - AI model governance and control
-   - Data security and privacy
-   - Operational efficiency
-   - Cost optimization
-   - Scalability
-
-3. **Address Technical Challenges** (2 hours):
-   - Design Core Cloud Environment
-   - Design Workload Hosting Environment
-   - Design Centralized AI Management Environment
-
-4. **Present Deliverables**:
-   - High-level architecture diagrams
-   - Azure services list and roles
-   - Implementation plans (deployment, migration, governance, security, AI model governance)
-   - Risk assessment and mitigation strategies
-
-## Deliverables
-
-Participants will produce:
-
-- High-level architecture diagrams.
-- Azure services list and roles.
-- Implementation plans (deployment, migration, governance, security, AI model governance).
-- Risk assessment and mitigation strategies.
-
-## Intended Audience
-
-This session is intended for cloud architects, solution architects, IT professionals, and technical decision-makers interested in Azure architecture, AI adoption, and cloud governance.
-
-## Workshop Delivery Flowchart
-The following flowchart illustrates the structured approach for delivering this whiteboard design session:
+## Workshop Flow
 
 ```mermaid
-flowchart TD
-    Start([Workshop Start]) --> ReviewCustomerStory[Review Customer Story]
-    ReviewCustomerStory --> DiscussKeyQuestions[Discuss Key Questions]
-    DiscussKeyQuestions --> DefineBusinessRequirements[Define Business Requirements]
-    DefineBusinessRequirements --> ArchitectureDesign[Architecture Design]
-    ArchitectureDesign --> SecurityCompliance[Security and Compliance]
-    ArchitectureDesign --> GovernanceManagement[Governance and Management]
-    ArchitectureDesign --> ConnectivityIntegration[Connectivity and Integration]
-    ArchitectureDesign --> AIServiceManagement[AI Service Management]
-    ArchitectureDesign --> AIModelGovernance[AI Model Governance and Control]
-    SecurityCompliance --> End([Workshop End])
-    GovernanceManagement --> End
-    ConnectivityIntegration --> End
-    AIServiceManagement --> End
-    AIModelGovernance --> End
+graph TD
+    A[Start: Understand Customer Scenario - IFS] --> B(Define Platform Requirements)
+    B --> C{Design Platform Architecture}
+    C --> D[CAF: Ready, Govern, Manage\nWAF: Security, Reliability, OpEx]
+    C --> E(Define Workload Requirements - RAG Chatbot)
+    E --> F{Design Workload Architecture}
+    F --> G[CAF: Adopt, Secure, Manage\nWAF: Perf. Efficiency, Cost, Reliability]
+    D --> H{End-to-End Review & Justification}
+    G --> H
+
+    subgraph "Module 1: Business Need"
+        A
+    end
+
+    subgraph "Module 2: Platform Design (WDS 1)"
+        B
+        C
+        D
+    end
+
+    subgraph "Module 3: Workload Design (WDS 2)"
+        E
+        F
+        G
+    end
+
+    subgraph "Module 4: Final Review"
+        H
+    end
+
+    style A fill:#f9f,stroke:#333,stroke-width:2px
+    style H fill:#f9f,stroke:#333,stroke-width:2px
 ```
+
+## Modules
+
+### Module 1: Understanding the Business Need (CAF: Strategy & Plan)
+
+**Objective:** Analyze the customer's (IFS) business drivers, challenges, goals, and specific AI use cases.
+
+**Activities:**  
+- Review the customer story.  
+- Identify key objectives, success metrics, and initial high-level requirements.
+
+**Materials:**  
+- `./wds/ifs-customer-story.md` (Customer Story)
+
+---
+
+### Module 2: Designing the Azure AI Platform Foundation (CAF: Ready, Govern, Manage | WAF: Security, Reliability, OpEx)
+
+**Objective:** Design a secure, scalable, and well-governed Azure foundation using Landing Zone principles to support IFS's current needs and future AI adoption. This includes designing a central, secure "AI Hub" for managing and accessing shared AI services like Azure OpenAI and Azure AI Search.
+
+**Activities:**  
+- Define platform requirements (security, governance, connectivity, AI service management).  
+- Design the Landing Zone structure (Platform & Application LZs).  
+- Architect the AI Hub with private networking (Private Endpoints, secure gateway).  
+- Select core platform services.
+
+**Key Concepts:**  
+- Subscription democratization.  
+- Identity management.  
+- Network topology (Hub-Spoke).  
+- Private networking.  
+- Azure Policy.  
+- Azure Monitor.  
+- Centralized AI service governance.
+
+**Materials:**  
+- `./wds/ifs-alz-challenge-session.md` (Platform WDS)
+
+---
+
+### Module 3: Designing the AI Workload - RAG Chatbot (CAF: Adopt, Secure, Manage | WAF: Perf. Efficiency, Cost Opt., Reliability)
+
+**Objective:** Design the specific "IFS Knowledge Assistant" RAG chatbot application, ensuring it leverages the platform foundation securely and efficiently.
+
+**Activities:**  
+- Define workload requirements.  
+- Design the application architecture (UI, backend/orchestration, data sources).  
+- Select appropriate Azure services for hosting components (e.g., App Service, ML Endpoints).  
+- Design the RAG pipeline.  
+- Implement security controls (Managed Identities, Key Vault).  
+- Plan for monitoring.  
+- Outline deployment strategies (IaC, CI/CD).
+
+**Key Concepts:**  
+- RAG pattern.  
+- Prompt Flow.  
+- Azure OpenAI.  
+- Azure AI Search.  
+- App Service.  
+- ML Managed Online Endpoints.  
+- Application Gateway.  
+- VNet Integration.  
+- Private Endpoints.  
+- Managed Identities.  
+- Application Insights.  
+- IaC (Bicep).
+
+**Materials:**  
+- `./wds/ifs-rag-challenge-session.md` (Workload WDS)
+
+---
+
+### Module 4: End-to-End Review & Justification
+
+**Objective:** Consolidate the platform and workload designs into a cohesive end-to-end solution.
+
+**Activities:**  
+- Present the final architecture, justifying design choices based on requirements, CAF principles, and WAF pillars.  
+- Discuss potential risks and mitigation strategies.
+
+---
+
+## Key Principles Emphasized
+
+- **Cloud Adoption Framework (CAF):** Applying guidance across Strategy, Plan, Ready, Adopt, Govern, Manage, and Secure phases.  
+- **Well-Architected Framework (WAF):** Designing solutions considering the five pillars: Cost Optimization, Operational Excellence, Performance Efficiency, Reliability, and Security.  
+- **Security:** Defense-in-depth, private networking, identity-based access control, secure secrets management.  
+- **Governance:** Centralized policy enforcement, cost management, resource organization.  
+- **Scalability & Reliability:** Designing for growth and resilience.  
+- **Automation:** Utilizing Infrastructure as Code (IaC) and CI/CD practices.
+
+---
+
+## Prerequisites
+
+- Familiarity with fundamental Azure concepts (Subscriptions, Resource Groups, Networking, PaaS services).  
+- Basic understanding of AI/ML concepts (LLMs, RAG is helpful but not essential).  
+- Experience with architectural design discussions.
+
+---
+
+## Workshop Materials
+
+- `./wds/ifs-customer-story.md`: Scenario definition for Innovate Financial Services.  
+- `./wds/ifs-alz-challenge-session.md`: Whiteboard Design Session guide for the Platform Foundation & AI Hub.  
+- `./wds/ifs-rag-challenge-session.md`: Whiteboard Design Session guide for the RAG Chatbot Workload.  
+- `openai-chat-baseline.pdf`: Reference document for the baseline chat architecture.
+
+---
 
 ## References
 
