@@ -4,7 +4,7 @@
 
 In this session, attendees will design a secure, scalable Azure architecture to support Contoso Health's AI adoption journey. The architecture must address current challenges, fulfill strategic requirements, and enable scalable growth.
 
-## Step 1: Review the [Customer Story](./wds/contoso-health-customer-story.md)
+## Step 1: Review the [Customer Story](./contoso-health-customer-story.md)
 
 **Outcome**: Analyze Contoso Health's needs.
 
@@ -105,7 +105,7 @@ Design a secure and scalable cloud environment addressing:
 - Subscription design and resource organization.
 
 **Questions to consider:**
-- How will you implement hybrid identity management?
+- What approach will you use to implement hybrid identity management?
 - What network topology will best support Contoso Health's operations?
 - How will you implement security controls consistently?
 - What monitoring and management tools should be implemented?

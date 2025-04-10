@@ -41,7 +41,7 @@ Innovate Financial Services (IFS) wants to empower its employees by providing qu
 * **Operations & Deployment:**
     * Requirement: Implement comprehensive logging and monitoring for application health, performance, and usage (UI, backend, AI interactions).
     * Requirement: Define an automated deployment process for both infrastructure (using IaC like Bicep/Terraform) and application code/logic.
-    * Requirement: The backend logic (prompt flow) needs a defined authoring/testing process and a reliable hosting mechanism.
+    * Requirement: The backend logic requires a well-defined authoring and testing process and a reliable hosting mechanism.
     * Requirement: The solution should be designed for reliability (e.g., consider zone redundancy for key components) and scalability.
 
 ---

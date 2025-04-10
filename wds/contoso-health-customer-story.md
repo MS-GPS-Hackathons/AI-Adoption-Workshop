@@ -2,7 +2,7 @@
 
 Contoso Health is a regional healthcare provider operating multiple hospitals and clinics within a single country. They specialize in patient care, diagnostics, and preventive healthcare services. Contoso Health has identified significant opportunities to leverage artificial intelligence (AI) to enhance patient outcomes, optimize operational efficiency, and deliver innovative healthcare experiences.
 
-Contoso Health's leadership recognizes the importance of establishing a secure, scalable, and reliable cloud foundation to support their ambitious AI adoption journey. They have selected Azure as their strategic cloud platform due to its comprehensive AI capabilities, robust security features, scalability, and alignment with industry best practices outlined in the Microsoft Cloud Adoption Framework.
+Contoso Health's leadership emphasizes the need for a secure, scalable, and reliable cloud foundation to support their ambitious AI adoption journey. They have selected Azure as their strategic cloud platform due to its comprehensive AI capabilities, robust security features, scalability, and alignment with industry best practices outlined in the Microsoft Cloud Adoption Framework.
 
 ### Current Challenges
 
@@ -64,14 +64,5 @@ Contoso Health wants to ensure that only approved AI models are used within thei
 - Centralized management and governance of AI model deployment, versioning, and lifecycle.
 - Clear visibility into model usage, performance, and compliance status.
 - Mechanisms to restrict unauthorized access or deployment of unapproved AI models.
-
-### AI Use Cases
-
-Contoso Health has identified several key AI use cases to drive business value:
-
-- Predictive analytics for patient readmission and preventive care.
-- Medical imaging analysis using computer vision to enhance diagnostic accuracy.
-- Intelligent virtual assistants and chatbots for patient engagement and support.
-- Advanced analytics for operational insights and resource optimization.
 
 Contoso Health is committed to ensuring their AI adoption journey is secure, compliant, scalable, and aligned with their strategic vision. They seek a robust Azure architecture that addresses their current challenges, meets their stringent business requirements, and enables controlled, governed, and efficient adoption of AI technologies across their healthcare facilities.

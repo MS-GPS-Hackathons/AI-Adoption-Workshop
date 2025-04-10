@@ -6,7 +6,7 @@ Below is a challenge-based whiteboard design session (WDS) outline tailored for 
 
 ## Overview
 
-In this session, you will work in teams to solve a real-world challenge—designing an AI-enabled architecture that transforms business operations. The session is structured to guide you through understanding customer requirements, identifying key challenges, and architecting a secure, scalable solution that leverages Azure’s AI capabilities. The final design will align with patterns from the AI Hub Gateway Solution Accelerator.
+In this session, you will work in teams to solve a real-world challenge—designing an AI-enabled architecture that transforms business operations. The session is structured to guide you through understanding customer requirements, identifying key challenges, and architecting a secure, scalable solution that leverages Azure's AI capabilities. The final design will align with patterns from the AI Hub Gateway Solution Accelerator.
 
 ---
 
@@ -32,7 +32,7 @@ Fabrikam AI Innovations is a global consumer goods company facing stiff competit
 ### **Task 1: Capture Business Requirements & Define the Problem**
 
 **Challenge:**  
-Begin by identifying and mapping Fabrikam’s business objectives to technical requirements. Determine the key data sources, regulatory needs, and performance targets for the AI solution.
+Begin by identifying and mapping Fabrikam's business objectives to technical requirements. Determine the key data sources, regulatory needs, and performance targets for the AI solution.
 
 **Considerations:**  
 - **Business Alignment:** How can AI-driven personalization and operational insights be directly tied to measurable KPIs?  
@@ -54,7 +54,7 @@ Design an end-to-end data ingestion pipeline that feeds data from multiple sourc
 **Considerations:**  
 - **Ingestion Services:** Which Azure services (e.g., Event Hub, IoT Hub, Data Factory) will efficiently capture and standardize data?  
 - **Processing Layer:** How will Azure Stream Analytics and/or Azure Functions transform data in near real time to prepare it for AI analysis?  
-- **AI Integration:** Determine how Azure Cognitive Services and Azure Machine Learning models will be integrated to provide actionable insights.
+- **AI Integration:** Determine how Azure Cognitive Services and Azure Machine Learning models integrate to provide actionable insights.
 
 **Discussion Points:**  
 - Balancing a serverless approach with managed services for cost-effectiveness and scalability.  
@@ -83,7 +83,7 @@ Build an integration layer that securely exposes AI services and data insights t
 ### **Task 4: Aligning the Architecture with Business Outcomes**
 
 **Challenge:**  
-Tie every technical decision back to Fabrikam’s core business outcomes. Present a cohesive solution that not only solves technical challenges but also delivers tangible business benefits.
+Tie every technical decision back to Fabrikam's core business outcomes. Present a cohesive solution that not only solves technical challenges but also delivers tangible business benefits.
 
 **Considerations:**  
 - **Outcome Mapping:** Illustrate how real-time analytics drive personalized marketing and operational efficiency.  
@@ -112,7 +112,7 @@ At the end of this session, your solution should incorporate these core componen
 
 ## Whiteboard Layout Suggestions
 
-- **Central Hub:** Place Fabrikam’s business outcomes (enhanced customer experience, optimized operations, increased agility) at the center.
+- **Central Hub:** Place Fabrikam's business outcomes (enhanced customer experience, optimized operations, increased agility) at the center.
 - **Data Sources:** Branch out to various data sources (POS, IoT, social media) feeding into a centralized ingestion layer.
 - **Processing & AI:** Map the flow from data ingestion through real-time processing to AI service invocation.
 - **Integration Layer:** Highlight the API Management gateway and secure network topology.
@@ -122,7 +122,7 @@ At the end of this session, your solution should incorporate these core componen
 
 ## Wrap-Up & Next Steps
 
-- **Recap:** Summarize how each component of the architecture drives Fabrikam’s strategic goals.
+- **Recap:** Summarize how each component of the architecture drives Fabrikam's strategic goals.
 - **Discussion:** Invite questions on design trade-offs, security strategies, and scalability.
 - **Action Items:** Propose pilot deployments, performance evaluations, and iterative enhancements to refine the solution further.
 

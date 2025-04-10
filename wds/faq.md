@@ -16,7 +16,7 @@ Contoso Health is a regional healthcare provider operating multiple hospitals an
 
 Contoso Health selected Azure due to its comprehensive AI capabilities, robust security features, scalability, and alignment with industry best practices outlined in the Microsoft Cloud Adoption Framework.
 
-### What are Contoso Health's primary AI use cases?
+### What are the primary AI use cases identified by Contoso Health?
 
 - Predictive analytics for patient readmission and preventive care.
 - Medical imaging analysis using computer vision.

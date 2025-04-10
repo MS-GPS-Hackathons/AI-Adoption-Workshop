@@ -7,7 +7,7 @@
 
 This workshop guides participants through the end-to-end process of designing a secure, scalable, and governed AI solution on Microsoft Azure, aligning with the Microsoft Cloud Adoption Framework (CAF) and Azure Well-Architected Framework (WAF) principles.
 
-Starting with a realistic customer scenario (Innovate Financial Services - IFS), participants will first design the foundational Azure platform using Azure Landing Zones concepts, including a specialized AI Hub for governed access to AI services. Subsequently, they will design a specific AI workload – an internal RAG (Retrieval-Augmented Generation) chatbot – that leverages this platform foundation.
+The workshop begins with a realistic customer scenario (Innovate Financial Services - IFS). Participants will first design the foundational Azure platform using Azure Landing Zones concepts, including a specialized AI Hub for governed access to AI services. Subsequently, they will design a specific AI workload – an internal RAG (Retrieval-Augmented Generation) chatbot – that leverages this platform foundation.
 
 **Goal:** To equip participants with the knowledge and design patterns necessary to architect robust enterprise AI solutions on Azure, from the underlying platform infrastructure to the specific AI application components.
 
@@ -189,10 +189,11 @@ graph LR
 
 ## Workshop Materials
 
-- [Scenario definition for Innovate Financial Services.](./wds/ifs-customer-story.md)
-- [Whiteboard Design Session guide for the Platform Foundation & AI Hub.](./wds/ifs-alz-challenge-session.md)
-- [Whiteboard Design Session guide for the RAG Chatbot Workload.](./wds/ifs-rag-challenge-session.md)
+- [Scenario definition for Innovate Financial Services](./wds/ifs-customer-story.md)
+- [Whiteboard Design Session guide for the Platform Foundation & AI Hub](./wds/ifs-alz-challenge-session.md)
+- [Whiteboard Design Session guide for the RAG Chatbot Workload](./wds/ifs-rag-challenge-session.md)
 - Presentation slides for this workshop.
+
 ---
 
 ## References
