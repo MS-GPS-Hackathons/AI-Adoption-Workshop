@@ -115,7 +115,7 @@ graph TD
 - IaC (Bicep).
 
 **Materials:**  
-- ./wds/ifs-rag-challenge-session.md (Workload WDS)
+- [AI Workload WDS](./wds/ifs-rag-challenge-session.md)
 
 ---
 
@@ -150,10 +150,10 @@ graph TD
 
 ## Workshop Materials
 
-- `[./wds/ifs-customer-story.md](./wds/ifs-customer-story.md)`: Scenario definition for Innovate Financial Services.  
-- `[./wds/ifs-alz-challenge-session.md](./wds/ifs-alz-challenge-session.md)`: Whiteboard Design Session guide for the Platform Foundation & AI Hub.  
-- `[./wds/ifs-rag-challenge-session.md](./wds/ifs-rag-challenge-session.md)`: Whiteboard Design Session guide for the RAG Chatbot Workload.  
-- `[./wds/ifs-challenge-session.pptx](./wds/ifs-challenge-session.pptx)`: Presentation slides for this workshop.
+- [Scenario definition for Innovate Financial Services.](./wds/ifs-customer-story.md)
+- [Whiteboard Design Session guide for the Platform Foundation & AI Hub.](./wds/ifs-alz-challenge-session.md)
+- [Whiteboard Design Session guide for the RAG Chatbot Workload.](./wds/ifs-rag-challenge-session.md)
+- Presentation slides for this workshop.
 ---
 
 ## References
