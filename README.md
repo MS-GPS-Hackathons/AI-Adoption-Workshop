@@ -14,85 +14,77 @@ Starting with a realistic customer scenario (Innovate Financial Services - IFS),
 ## Workshop Flow
 
 ```mermaid
-graph TD
-    Start[🍀 Start: IFS AI Architecture Design] --> Phase01
-    Phase01[Phase 01: Define AI Strategy] --> Motivations
-    Phase01 --> Mission
-    Phase01 --> Objectives
-    Motivations --> Phase02
-    Mission --> Phase02
-    Objectives --> Phase02
+%% AI Adoption Journey - The "Like a Boss" version
+graph LR
+    %% Phase 01: Define AI Strategy with starting glyph
+    P1[🚀 Phase 01: Define AI Strategy]
+    P1a[Motivations]
+    P1b[Mission]
+    P1c[Objectives]
+    
+    %% Phase 02: Design AI platform
+    P2[Phase 02: Design AI platform]
+    P2a[Identity & Access Mgmt]
+    P2b[Resource Organization]
+    P2c[Networking]
+    P2d[Management & Monitoring]
+    P2e[Security & Compliance]
+    
+    %% Phase 03: Design AI workload
+    P3w[Phase 03: Design AI workload]
+    P3w1[Use Cases]
+    P3w2[Prompt Flow]
+    P3w3[Components]
+    P3w4[Well-Architected Considerations]
+    
+    %% Phase 03: Design AI environment
+    P3e[Phase 03: Design AI environment]
+    P3e1[Subscription Setup]
+    P3e2[Networking]
+    P3e3[AI Model Governance]
+    P3e4[Data Governance]
+    P3e5[Management & Monitoring]
+    P3e6[Security & Compliance]
+    
+    %% Phase 03: AI Workload Landing Zone Integration Phase
+    P3l[Phase 03: AI Workload Landing Zone Integration Phase]
+    
+    %% Phase 04: End-to-End Review & Justification
+    P4[Phase 04: End-to-End Review & Justification]
+    
+    %% Phase 05: Beer o'clock with beer glyph
+    P5[🍺 Phase 05: Beer o'clock]
 
-    Phase02[Phase 02: Design AI Platform] --> ResourceHierarchy
-    Phase02 --> NetworkingPlatform
-    Phase02 --> GovernancePlatform
-    Phase02 --> ManagementPlatform
-    Phase02 --> SecurityPlatform
-    ResourceHierarchy --> Phase03Workload
-    NetworkingPlatform --> Phase03Workload
-    GovernancePlatform --> Phase03Workload
-    ManagementPlatform --> Phase03Workload
-    SecurityPlatform --> Phase03Workload
+    %% Link sections within each phase
+    P1 --> P1a
+    P1 --> P1b
+    P1 --> P1c
 
-    Phase03Workload[Phase 03: Design AI Workload] --> UseCases
-    Phase03Workload --> PromptFlow
-    Phase03Workload --> Components
-    Phase03Workload --> WellArchitectedConsiderations
-    UseCases --> Phase03Environment
-    PromptFlow --> Phase03Environment
-    Components --> Phase03Environment
-    WellArchitectedConsiderations --> Phase03Environment
+    P2 --> P2a
+    P2 --> P2b
+    P2 --> P2c
+    P2 --> P2d
+    P2 --> P2e
 
-    Phase03Environment[Phase 03: Design AI Environment] --> SubscriptionSetup
-    Phase03Environment --> NetworkingEnvironment
-    Phase03Environment --> DataGovernance
-    Phase03Environment --> AIModelGovernance
-    Phase03Environment --> ManagementEnvironment
-    Phase03Environment --> SecurityEnvironment
-    SubscriptionSetup --> Phase03Integration
-    NetworkingEnvironment --> Phase03Integration
-    DataGovernance --> Phase03Integration
-    AIModelGovernance --> Phase03Integration
-    ManagementEnvironment --> Phase03Integration
-    SecurityEnvironment --> Phase03Integration
+    P3w --> P3w1
+    P3w --> P3w2
+    P3w --> P3w3
+    P3w --> P3w4
 
-    Phase03Integration[Phase 03: AI Workload Landing Zone Integration] --> Phase04
-    Phase04[Phase 04: End-to-End Review & Justification] --> Phase05
-    Phase05[🍺 Phase 05: Beer o'clock]
+    P3e --> P3e1
+    P3e --> P3e2
+    P3e --> P3e3
+    P3e --> P3e4
+    P3e --> P3e5
+    P3e --> P3e6
 
-    %% Colors for phases
-    style Phase01 fill:#ffcc99,stroke:#333,stroke-width:2px
-    style Motivations fill:#ffcc99
-    style Mission fill:#ffcc99
-    style Objectives fill:#ffcc99
-
-    style Phase02 fill:#99ccff,stroke:#333,stroke-width:2px
-    style ResourceHierarchy fill:#99ccff
-    style NetworkingPlatform fill:#99ccff
-    style GovernancePlatform fill:#99ccff
-    style ManagementPlatform fill:#99ccff
-    style SecurityPlatform fill:#99ccff
-
-    style Phase03Workload fill:#ff9999,stroke:#333,stroke-width:2px
-    style UseCases fill:#ff9999
-    style PromptFlow fill:#ff9999
-    style Components fill:#ff9999
-    style WellArchitectedConsiderations fill:#ff9999
-
-    style Phase03Environment fill:#ffccff,stroke:#333,stroke-width:2px
-    style SubscriptionSetup fill:#ffccff
-    style NetworkingEnvironment fill:#ffccff
-    style DataGovernance fill:#ffccff
-    style AIModelGovernance fill:#ffccff
-    style ManagementEnvironment fill:#ffccff
-    style SecurityEnvironment fill:#ffccff
-
-    style Phase03Integration fill:#ffff99,stroke:#333,stroke-width:2px
-
-    style Phase04 fill:#c2f0c2,stroke:#333,stroke-width:2px
-    style Phase05 fill:#b3b3ff,stroke:#333,stroke-width:2px
-
-    style Start fill:#f96,stroke:#333,stroke-width:2px
+    %% Define overall sequence
+    P1 --> P2
+    P2 --> P3w
+    P3w --> P3e
+    P3e --> P3l
+    P3l --> P4
+    P4 --> P5
 ```
 
 ## Modules
