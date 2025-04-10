@@ -59,7 +59,7 @@ graph TD
 - Identify key objectives, success metrics, and initial high-level requirements.
 
 **Materials:**  
-- `./wds/ifs-customer-story.md` (Customer Story)
+- [Customer Story](./wds/ifs-customer-story.md)
 
 ---
 
@@ -83,7 +83,7 @@ graph TD
 - Centralized AI service governance.
 
 **Materials:**  
-- `./wds/ifs-alz-challenge-session.md` (Platform WDS)
+- [Platform WDS](./wds/ifs-alz-challenge-session.md)
 
 ---
 
@@ -115,7 +115,7 @@ graph TD
 - IaC (Bicep).
 
 **Materials:**  
-- `./wds/ifs-rag-challenge-session.md` (Workload WDS)
+- ./wds/ifs-rag-challenge-session.md (Workload WDS)
 
 ---
 
@@ -150,11 +150,10 @@ graph TD
 
 ## Workshop Materials
 
-- `./wds/ifs-customer-story.md`: Scenario definition for Innovate Financial Services.  
-- `./wds/ifs-alz-challenge-session.md`: Whiteboard Design Session guide for the Platform Foundation & AI Hub.  
-- `./wds/ifs-rag-challenge-session.md`: Whiteboard Design Session guide for the RAG Chatbot Workload.  
-- `openai-chat-baseline.pdf`: Reference document for the baseline chat architecture.
-
+- `[./wds/ifs-customer-story.md](./wds/ifs-customer-story.md)`: Scenario definition for Innovate Financial Services.  
+- `[./wds/ifs-alz-challenge-session.md](./wds/ifs-alz-challenge-session.md)`: Whiteboard Design Session guide for the Platform Foundation & AI Hub.  
+- `[./wds/ifs-rag-challenge-session.md](./wds/ifs-rag-challenge-session.md)`: Whiteboard Design Session guide for the RAG Chatbot Workload.  
+- `[./wds/ifs-challenge-session.pptx](./wds/ifs-challenge-session.pptx)`: Presentation slides for this workshop.
 ---
 
 ## References
