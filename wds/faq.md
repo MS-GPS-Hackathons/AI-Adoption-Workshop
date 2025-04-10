@@ -4,30 +4,30 @@
 
 ### What is the purpose of this whiteboard design session?
 
-This session aims to guide attendees through designing a secure, scalable Azure architecture to support Contoso Health's AI adoption journey. Attendees will address real-world business requirements, technical challenges, and strategic objectives.
+This session aims to guide attendees through designing a secure, scalable Azure architecture to support IFS's AI adoption journey. Attendees will address real-world business requirements, technical challenges, and strategic objectives.
 
-### Who is Contoso Health?
+### Who is IFS?
 
-Contoso Health is a regional healthcare provider operating multiple hospitals and clinics within a single country. They specialize in patient care, diagnostics, and preventive healthcare services.
+IFS (Innovate Financial Services) is a well-established global financial institution providing banking, investment, and insurance services. They specialize in financial services across multiple markets.
 
 ## Azure and AI Adoption
 
-### Why did Contoso Health choose Azure for their AI adoption?
+### Why did IFS choose Azure for their AI adoption?
 
-Contoso Health selected Azure due to its comprehensive AI capabilities, robust security features, scalability, and alignment with industry best practices outlined in the Microsoft Cloud Adoption Framework.
+IFS selected Azure due to its comprehensive AI capabilities, robust security features, scalability, and alignment with industry best practices outlined in the Microsoft Cloud Adoption Framework.
 
-### What are the primary AI use cases identified by Contoso Health?
+### What are the primary AI use cases identified by IFS?
 
-- Predictive analytics for patient readmission and preventive care.
-- Medical imaging analysis using computer vision.
-- Intelligent virtual assistants and chatbots for patient engagement.
-- Advanced analytics for operational insights and resource optimization.
+- Fraud detection using AI-powered analytics.
+- Personalized financial advice and recommendations.
+- Risk management and assessment.
+- Automated customer support and virtual assistants.
 
 ## Business Requirements
 
-### What are the key business requirements for Contoso Health?
+### What are the key business requirements for IFS?
 
-- Security and compliance (HIPAA, GDPR, local regulations).
+- Security and compliance (PCI DSS, GDPR, local financial regulations).
 - Centralized governance and management of AI services.
 - Secure connectivity and integration with on-premises environments.
 - Centralized AI model governance and control.
@@ -36,13 +36,13 @@ Contoso Health selected Azure due to its comprehensive AI capabilities, robust s
 - Cost optimization and resource visibility.
 - Scalability to support future growth.
 
-### Why is AI model governance important for Contoso Health?
+### Why is AI model governance important for IFS?
 
-Contoso Health requires strict control over AI models to ensure only validated, compliant, and ethically approved models are deployed. Centralized governance helps maintain compliance, security, and ethical standards.
+IFS requires strict control over AI models to ensure only validated, compliant, and ethically approved models are deployed. Centralized governance helps maintain compliance, security, and ethical standards in financial services.
 
-### How does Contoso Health ensure data privacy?
+### How does IFS ensure data privacy?
 
-Contoso Health emphasizes strict adherence to data residency and sovereignty requirements, encryption of data at rest and in transit, and maintaining full organizational control over patient data.
+IFS emphasizes strict adherence to data residency and sovereignty requirements, encryption of data at rest and in transit, and maintaining full organizational control over sensitive customer financial data.
 
 ## Technical Challenges
 
