@@ -6,7 +6,7 @@
 
 This whiteboard design session provides attendees with a practical scenario to design a secure, scalable Azure architecture supporting AI adoption for Contoso Health, a regional healthcare provider.
 
-Participants will analyze Contoso Health's business objectives, strategic vision, and current challenges. They will then define clear business requirements and address technical challenges by designing Azure architectures aligned with Azure best practices and the Microsoft Cloud Adoption Framework.
+Participants will analyze the customer's business objectives, strategic vision, and current challenges. They will then define clear business requirements and address technical challenges by designing Azure architectures aligned with Azure best practices, the Microsoft Cloud Adoption Framework, and Azure Well-Architected Framework.
 
 ## Workshop Delivery Flowchart
 
@@ -19,7 +19,7 @@ The following flowchart illustrates the structured approach for delivering this 
 The session is divided into three main steps:
 
 1. **Analyze Customer Needs** (15 minutes)
-   - Review the provided [Customer Story](./wds/customer-story.md).
+   - Review the provided [Customer Story](./wds/contoso-health-customer-story.md).
    - Identify key business objectives, AI use cases, and success metrics.
 
 2. **Define Business Requirements** (30 minutes):
@@ -80,6 +80,7 @@ flowchart TD
 
 ## References
 
-- [Microsoft Cloud Adoption Framework for Azure](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/)
-- [Azure Cloud Adoption Framework for AI](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/ai/)
-- [Azure AI Hub Gateway Solution Accelerator](https://github.com/Azure-Samples/ai-hub-gateway-solution-accelerator/tree/main)
+* [Microsoft Cloud Adoption Framework for Azure](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/)
+* [Azure Cloud Adoption Framework - AI Scenario](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/ai/)
+* [Azure OpenAI baseline Landing Zone reference architecture](https://learn.microsoft.com/en-us/azure/architecture/ai-ml/architecture/azure-openai-baseline-landing-zone) *(For facilitator reference - attendees should derive principles)*
+* [AI Hub Gateway Solution Accelerator Concept](https://github.com/Azure-Samples/ai-hub-gateway-solution-accelerator/tree/main) *(For facilitator reference)*
