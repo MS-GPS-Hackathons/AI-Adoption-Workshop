@@ -15,37 +15,84 @@ Starting with a realistic customer scenario (Innovate Financial Services - IFS),
 
 ```mermaid
 graph TD
-    A[Start: Understand Customer Scenario - IFS] --> B(Define Platform Requirements)
-    B --> C{Design Platform Architecture}
-    C --> D[CAF: Ready, Govern, Manage\nWAF: Security, Reliability, OpEx]
-    C --> E(Define Workload Requirements - RAG Chatbot)
-    E --> F{Design Workload Architecture}
-    F --> G[CAF: Adopt, Secure, Manage\nWAF: Perf. Efficiency, Cost, Reliability]
-    D --> H{End-to-End Review & Justification}
-    G --> H
+    Start[🍀 Start: IFS AI Architecture Design] --> Phase01
+    Phase01[Phase 01: Define AI Strategy] --> Motivations
+    Phase01 --> Mission
+    Phase01 --> Objectives
+    Motivations --> Phase02
+    Mission --> Phase02
+    Objectives --> Phase02
 
-    subgraph "Module 1: Business Need"
-        A
-    end
+    Phase02[Phase 02: Design AI Platform] --> ResourceHierarchy
+    Phase02 --> NetworkingPlatform
+    Phase02 --> GovernancePlatform
+    Phase02 --> ManagementPlatform
+    Phase02 --> SecurityPlatform
+    ResourceHierarchy --> Phase03Workload
+    NetworkingPlatform --> Phase03Workload
+    GovernancePlatform --> Phase03Workload
+    ManagementPlatform --> Phase03Workload
+    SecurityPlatform --> Phase03Workload
 
-    subgraph "Module 2: Platform Design (WDS 1)"
-        B
-        C
-        D
-    end
+    Phase03Workload[Phase 03: Design AI Workload] --> UseCases
+    Phase03Workload --> PromptFlow
+    Phase03Workload --> Components
+    Phase03Workload --> WellArchitectedConsiderations
+    UseCases --> Phase03Environment
+    PromptFlow --> Phase03Environment
+    Components --> Phase03Environment
+    WellArchitectedConsiderations --> Phase03Environment
 
-    subgraph "Module 3: Workload Design (WDS 2)"
-        E
-        F
-        G
-    end
+    Phase03Environment[Phase 03: Design AI Environment] --> SubscriptionSetup
+    Phase03Environment --> NetworkingEnvironment
+    Phase03Environment --> DataGovernance
+    Phase03Environment --> AIModelGovernance
+    Phase03Environment --> ManagementEnvironment
+    Phase03Environment --> SecurityEnvironment
+    SubscriptionSetup --> Phase03Integration
+    NetworkingEnvironment --> Phase03Integration
+    DataGovernance --> Phase03Integration
+    AIModelGovernance --> Phase03Integration
+    ManagementEnvironment --> Phase03Integration
+    SecurityEnvironment --> Phase03Integration
 
-    subgraph "Module 4: Final Review"
-        H
-    end
+    Phase03Integration[Phase 03: AI Workload Landing Zone Integration] --> Phase04
+    Phase04[Phase 04: End-to-End Review & Justification] --> Phase05
+    Phase05[🍺 Phase 05: Beer o'clock]
 
-    style A fill:#f9f,stroke:#333,stroke-width:2px
-    style H fill:#f9f,stroke:#333,stroke-width:2px
+    %% Colors for phases
+    style Phase01 fill:#ffcc99,stroke:#333,stroke-width:2px
+    style Motivations fill:#ffcc99
+    style Mission fill:#ffcc99
+    style Objectives fill:#ffcc99
+
+    style Phase02 fill:#99ccff,stroke:#333,stroke-width:2px
+    style ResourceHierarchy fill:#99ccff
+    style NetworkingPlatform fill:#99ccff
+    style GovernancePlatform fill:#99ccff
+    style ManagementPlatform fill:#99ccff
+    style SecurityPlatform fill:#99ccff
+
+    style Phase03Workload fill:#ff9999,stroke:#333,stroke-width:2px
+    style UseCases fill:#ff9999
+    style PromptFlow fill:#ff9999
+    style Components fill:#ff9999
+    style WellArchitectedConsiderations fill:#ff9999
+
+    style Phase03Environment fill:#ffccff,stroke:#333,stroke-width:2px
+    style SubscriptionSetup fill:#ffccff
+    style NetworkingEnvironment fill:#ffccff
+    style DataGovernance fill:#ffccff
+    style AIModelGovernance fill:#ffccff
+    style ManagementEnvironment fill:#ffccff
+    style SecurityEnvironment fill:#ffccff
+
+    style Phase03Integration fill:#ffff99,stroke:#333,stroke-width:2px
+
+    style Phase04 fill:#c2f0c2,stroke:#333,stroke-width:2px
+    style Phase05 fill:#b3b3ff,stroke:#333,stroke-width:2px
+
+    style Start fill:#f96,stroke:#333,stroke-width:2px
 ```
 
 ## Modules
