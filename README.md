@@ -1,11 +1,85 @@
-# AI Adoption Workshop
+# AI Hub and Azure Landing Zones - Whiteboard Design Session
 
-![Whiteboarding Session](/images/intro-image.webp)
-This repository empowers partners to confidently assist customers in their AI Adoption journey in order to integrate AI into their operations, ensuring alignment with business goals, responsible AI practices, and continuous monitoring to maintain accuracy and reliability.
+![Azure AI Adoption](./media/ai-adoption-strategy.png)
 
+## Overview
 
-Resources:
+This whiteboard design session provides attendees with a practical scenario to design a secure, scalable Azure architecture supporting AI adoption for Contoso Health, a regional healthcare provider.
 
-- [AI Adoption Framework](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/ai "Microsoft AI Adoption Framework")
-- [Azure AI Architectures](https://learn.microsoft.com/en-us/azure/architecture/ai-ml/ "Azure AI Architectures")
-- [AI Hub Gateway Landing Zone accelerator](https://github.com/Azure-Samples/ai-hub-gateway-solution-accelerator/tree/main "AI Hub Gateway Landing Zone accelerator")
+Participants will analyze Contoso Health's business objectives, strategic vision, and current challenges. They will then define clear business requirements and address technical challenges by designing Azure architectures aligned with Azure best practices and the Microsoft Cloud Adoption Framework.
+
+## Workshop Delivery Flowchart
+
+The following flowchart illustrates the structured approach for delivering this whiteboard design session:
+
+![Workshop Delivery Flowchart](./media/cloud-adoption-strategy.png)
+
+## Session Structure
+
+The session is divided into three main steps:
+
+1. **Analyze Customer Needs** (15 minutes)
+   - Review the provided [Customer Story](./wds/customer-story.md).
+   - Identify key business objectives, AI use cases, and success metrics.
+
+2. **Define Business Requirements** (30 minutes):
+   - Security and compliance
+   - Governance and management
+   - Connectivity and integration
+   - AI service management
+   - AI model governance and control
+   - Data security and privacy
+   - Operational efficiency
+   - Cost optimization
+   - Scalability
+
+3. **Address Technical Challenges** (2 hours):
+   - Design Core Cloud Environment
+   - Design Workload Hosting Environment
+   - Design Centralized AI Management Environment
+
+4. **Present Deliverables**:
+   - High-level architecture diagrams
+   - Azure services list and roles
+   - Implementation plans (deployment, migration, governance, security, AI model governance)
+   - Risk assessment and mitigation strategies
+
+## Deliverables
+
+Participants will produce:
+
+- High-level architecture diagrams.
+- Azure services list and roles.
+- Implementation plans (deployment, migration, governance, security, AI model governance).
+- Risk assessment and mitigation strategies.
+
+## Intended Audience
+
+This session is intended for cloud architects, solution architects, IT professionals, and technical decision-makers interested in Azure architecture, AI adoption, and cloud governance.
+
+## Workshop Delivery Flowchart
+The following flowchart illustrates the structured approach for delivering this whiteboard design session:
+
+```mermaid
+flowchart TD
+    Start([Workshop Start]) --> ReviewCustomerStory[Review Customer Story]
+    ReviewCustomerStory --> DiscussKeyQuestions[Discuss Key Questions]
+    DiscussKeyQuestions --> DefineBusinessRequirements[Define Business Requirements]
+    DefineBusinessRequirements --> ArchitectureDesign[Architecture Design]
+    ArchitectureDesign --> SecurityCompliance[Security and Compliance]
+    ArchitectureDesign --> GovernanceManagement[Governance and Management]
+    ArchitectureDesign --> ConnectivityIntegration[Connectivity and Integration]
+    ArchitectureDesign --> AIServiceManagement[AI Service Management]
+    ArchitectureDesign --> AIModelGovernance[AI Model Governance and Control]
+    SecurityCompliance --> End([Workshop End])
+    GovernanceManagement --> End
+    ConnectivityIntegration --> End
+    AIServiceManagement --> End
+    AIModelGovernance --> End
+```
+
+## References
+
+- [Microsoft Cloud Adoption Framework for Azure](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/)
+- [Azure Cloud Adoption Framework for AI](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/ai/)
+- [Azure AI Hub Gateway Solution Accelerator](https://github.com/Azure-Samples/ai-hub-gateway-solution-accelerator/tree/main)
