@@ -89,7 +89,8 @@ graph LR
 
 ## Modules
 
-### Module 1: Understanding the Business Need (CAF: Strategy & Plan)
+### Module 1: Understanding the Business Need
+## In scope: CAF AI Strategy - Process to develop an AI strategy | AI Plan - Process to plan for AI adoption
 
 **Objective:** Analyze the customer's (IFS) business drivers, challenges, goals, and specific AI use cases.
 
@@ -102,7 +103,8 @@ graph LR
 
 ---
 
-### Module 2: Designing the Azure AI Platform Foundation (CAF: Ready, Govern, Manage | WAF: Security, Reliability, OpEx)
+### Module 2: Designing the Azure AI Platform Foundation
+## In scope: CAF: Ready, Govern, Manage, Secure | WAF: Security, Reliability, Operational Excellence
 
 **Objective:** Design a secure, scalable, and well-governed Azure foundation using Landing Zone principles to support IFS's current needs and future AI adoption. This includes designing a central, secure "AI Hub" for managing and accessing shared AI services like Azure OpenAI and Azure AI Search.
 
@@ -126,7 +128,8 @@ graph LR
 
 ---
 
-### Module 3: Designing the AI Workload - RAG Chatbot (CAF: Adopt, Secure, Manage | WAF: Perf. Efficiency, Cost Opt., Reliability)
+### Module 3: Designing the AI Workload - RAG Chatbot
+## In scope: AI Ready – Process to build AI workloads in Azure | Well Architected Framework
 
 **Objective:** Design the specific "IFS Knowledge Assistant" RAG chatbot application, ensuring it leverages the platform foundation securely and efficiently.
 

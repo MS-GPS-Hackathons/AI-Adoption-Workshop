@@ -32,7 +32,7 @@
 
 ---
 
-## Step 2: Define High-Level Requirements (30 minutes)
+## Step 2: Define High-Level Requirements (45 minutes)
 
 **Activity:** Based on the customer story and the goals of building a foundation for secure AI adoption, define the key business and technical requirements. Focus on *what* needs to be achieved, not *how*.
 
@@ -63,7 +63,7 @@
 
 ---
 
-## Step 3: Design Challenges (2 hours)
+## Step 3: Design Challenges (3 hours)
 
 **Activity:** Address the following technical challenges by designing the Azure architecture for IFS. Create diagrams and list key Azure services.
 
@@ -105,7 +105,7 @@
 
 ---
 
-## Step 4: Present and Justify (30 minutes)
+## Step 4: Present and Justify (1 hour)
 
 **Activity:** Prepare a high-level diagram of your proposed architecture, highlighting how it addresses the core requirements and challenges.
 
