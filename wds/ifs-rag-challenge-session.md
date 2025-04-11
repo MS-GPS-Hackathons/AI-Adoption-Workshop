@@ -130,7 +130,6 @@ Innovate Financial Services (IFS) wants to empower its employees by providing qu
     * How will you validate the Infrastructure as Code (IaC) templates (e.g., Bicep/Terraform) for deploying the workload in the Landing Zone?
     * What steps will you take to test the CI/CD pipelines for seamless deployment of application updates?
 
----
 
 ### Deliverables:
 
@@ -138,7 +137,6 @@ Innovate Financial Services (IFS) wants to empower its employees by providing qu
 2. **Updated Architecture Diagram:** A diagram showing the integrated workload, including networking, security, and dependencies.
 3. **Validation Checklist:** A checklist summarizing the results of integration tests, including network connectivity, security compliance, and performance benchmarks.
 
----
 
 ### Key Considerations:
 
